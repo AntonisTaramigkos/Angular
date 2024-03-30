@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'angular-introduction';
+export class AppComponent {  
+  name = "Antonis";
+
+  person = {
+    givenName : "Antonis",
+    surName :"Tara",
+    age: 41,
+    email: "a@afaf.ge"
+
+  }
 }
