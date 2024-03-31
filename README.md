@@ -8,6 +8,10 @@
 - Συμπερίληψη της κλάσης `PersonTableComponent` στον πίνακα `imports` στην αρχικοποίηση του decorator στο αρχείο `app.component.ts`.
 - Χρήση του νέου component στο template του `app.component.html` με την ετικέτα `<app-person-table></app-person-table>`.
 
+   ## Βήμα 1: Απλή δέσμευση χαρακτηριστικών (one way binding)
+- Χρήση του placeholder `{​​{​​ <atribute_name > }​​}​​` για τη δεσμευση του χαρακτηριστικού `attribute_name` στο template του component.
+- Αν το χαρακτηριστικό της κλάσης είναι αντικείμενο τότε χρησιμοποιούμε τη γνωστή σύνταξη `{​​{​​ <object_name>.<attribute_name> }​​}​​`.
+
 ## Βήμα 0: Προετοιμασία και βασικές ενέργειες
 - Εγκατάσταση του Angular CLI
   ```bash
@@ -105,7 +109,5 @@
   }​​
   ```
   
-   ## Βήμα 1: Απλή δέσμευση χαρακτηριστικών (one way binding)
-- Χρήση του placeholder `{​​{​​ <atribute_name > }​​}​​` για τη δεσμευση του χαρακτηριστικού `attribute_name` στο template του component.
-- Αν το χαρακτηριστικό της κλάσης είναι αντικείμενο τότε χρησιμοποιούμε τη γνωστή σύνταξη `{​​{​​ <object_name>.<attribute_name> }​​}​​`.
+
 
