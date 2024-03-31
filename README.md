@@ -1,5 +1,13 @@
-[Πέμπτη 8:06 μ.μ.] ΦΡΑΓΚΟΥΔΑΚΗΣ ΧΡΙΣΤΟΔΟΥΛΟΣ;FRAGKOUDAKIS CHRISTODOULOS
-    # Εισαγωγή στο Angular Framework
+
+# Εισαγωγή στο Angular Framework
+## Βήμα 2: Δημιουργία νέου component
+ 
+- Δημιουργία ενός νέου component με την εντολή `ng generate component components/person-table`.
+- Μεταφορά του πίνακα από το `app.component.html` στο template του νέου component.
+- Μεταφορά του χαρακτηριστικού `person` από την κλάση `AppComponent` στην κλάση `PersonTableComponent`.
+- Συμπερίληψη της κλάσης `PersonTableComponent` στον πίνακα `imports` στην αρχικοποίηση του decorator στο αρχείο `app.component.ts`.
+- Χρήση του νέου component στο template του `app.component.html` με την ετικέτα `<app-person-table></app-person-table>`.
+
 ## Βήμα 0: Προετοιμασία και βασικές ενέργειες
 - Εγκατάσταση του Angular CLI
   ```bash
