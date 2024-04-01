@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { EventBindExampleComponent } from './components/event-bind-example/event-bind-example.component';
-import { PersonTableComponent } from './components/person-table/person-table.component';
+import { ListGroupMenuComponent } from "./components/list-group-menu/list-group-menu.component";
 import { Person } from './shared/interfaces/person';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterLink, RouterOutlet,  PersonTableComponent, EventBindExampleComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    imports: [RouterLink, RouterOutlet, ListGroupMenuComponent]
 })
 export class AppComponent {   
 
