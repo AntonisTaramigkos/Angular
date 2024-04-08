@@ -1,6 +1,13 @@
 
 # Εισαγωγή στο Angular Framework
 
+import {
+  Dialog,
+  DialogRef,
+  DIALOG_DATA,
+  DialogModule,
+} from '@angular/cdk/dialog';
+
 ## Βήμα 9: Component Output
  
 - Δημιουργία του `ComponentOutputExampleComponent` και ενημέρωση του μενού της εφαρμογής μας (στο `app.routes.ts` και στο `list-group-menu.component.ts`).

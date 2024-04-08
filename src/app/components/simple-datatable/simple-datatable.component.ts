@@ -1,61 +1,25 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { EPerson } from 'src/app/shared/interfaces/person';
-
-@Component({
-  selector: 'app-simple-datatable',
-  standalone: true,
-  imports: [SimpleDatatableComponent],
-  templateUrl: './simple-datatable.component.html',
-  styleUrl: './simple-datatable.component.css'
-})
-export class SimpleDatatableComponent {
-  @Input() data:EPerson[];
-  @Output() pesonClicked = new EventEmitter<EPerson>();
-  
-  sortOrder = {
-    givenName:"none",
-    surName : "none",
-    age:"none",
-    email:"none",
-    education: "none"
-  }
-// sortkey = givenname/surname ktlp
-  sortData(sortKey:string){
-    if(this.sortOrder[sortKey]==="asc"){
-      this.sortOrder[sortKey] = "desc";
-      this.data = sortBy(this.data, sortKey).reverse();
-    }else {
-      this.sortOrder[sortKey]="asc";
-      this.data = sortBy(this.data, sortKey)
-    }
-
-    for(let key in this.sortOrder){
-      if(key !== sortKey){
-        this.sortOrder[key] = "none";
-      }
-    };
-    
-    import { Component, Input } from '@angular/core';
-import { EPerson } from 'src/app/shared/interfaces/person';
 import { sortBy } from 'lodash-es';
+import { EPerson } from 'src/app/shared/interfaces/person';
 
 @Component({
   selector: 'app-simple-datatable',
   standalone: true,
   imports: [],
   templateUrl: './simple-datatable.component.html',
-  styleUrl: './simple-datatable.component.css'
+  styleUrl: './simple-datatable.component.css',
 })
 export class SimpleDatatableComponent {
   @Input() data: EPerson[];
+  @Output() personClicked = new EventEmitter<EPerson>();
 
   sortOrder = {
     givenName: 'none',
     surName: 'none',
     age: 'none',
     email: 'none',
-    education: 'none'
-  }
+    education: 'none',
+  };
 
   sortData(sortKey: string) {
     if (this.sortOrder[sortKey] === 'asc') {
@@ -68,7 +32,7 @@ export class SimpleDatatableComponent {
 
     for (let key in this.sortOrder) {
       if (key !== sortKey) {
-        this.sortOrder[key] = 'none';;
+        this.sortOrder[key] = 'none';
       }
     }
   }
@@ -82,12 +46,8 @@ export class SimpleDatatableComponent {
       return '';
     }
   }
-}
 
-}
-    onPersonClicked(person:EPerson){
-      this.pesonClicked.emit(person);
-    }
-
+  onPersonClicked(person: EPerson) {
+    this.personClicked.emit(person);
   }
-
+}
