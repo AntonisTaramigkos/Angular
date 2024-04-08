@@ -4,9 +4,11 @@ import { ComponentOutputExampleComponent } from './components/component-output-e
 import { EventBindExampleComponent } from './components/event-bind-example/event-bind-example.component';
 import { ForDirectiveExampleComponent } from './components/for-directive-example/for-directive-example.component';
 import { SimpleDatatableExampleComponent } from './components/simple-datatable-example/simple-datatable-example.component';
+import { TemplateDrivenFormExampleComponent } from './components/template-driven-form-example/template-driven-form-example.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 
 export const routes: Routes = [
+    {path:"template-driven-form-example",component: TemplateDrivenFormExampleComponent  },
     {path:"component-output-example",component: ComponentOutputExampleComponent},
     {path:"for-directive-example", component: ForDirectiveExampleComponent},
     {path: "component-input-example", component: ComponentInputExampleComponent},
