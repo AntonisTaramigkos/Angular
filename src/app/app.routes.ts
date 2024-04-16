@@ -7,6 +7,7 @@ import { ForDirectiveExampleComponent } from './components/for-directive-example
 import { HttpClientExampleComponent } from './components/http-client-example/http-client-example.component';
 import { SimpleDatatableExampleComponent } from './components/simple-datatable-example/simple-datatable-example.component';
 import { TemplateDrivenFormExampleComponent } from './components/template-driven-form-example/template-driven-form-example.component';
+import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 
 export const routes: Routes = [
@@ -20,6 +21,7 @@ export const routes: Routes = [
     {path: "component-input-example", component: ComponentInputExampleComponent},
     {path:"event-bind-example", component : EventBindExampleComponent},
     {path:"simple-datatable-example",component: SimpleDatatableExampleComponent},
+    {path:"user-registration-example",component: UserRegistrationComponent},
     // {path:"welcome", component : WelcomeComponent},
     {path:" ",component : WelcomeComponent }
 ];
