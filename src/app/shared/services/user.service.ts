@@ -9,5 +9,5 @@ const API_URL  =`${environment.apiURL}/user`
 })
 export class UserService {
 
-  Http: HttpClient = inject(HttpClient)
+  http: HttpClient = inject(HttpClient)
 }

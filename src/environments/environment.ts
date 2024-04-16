@@ -1,4 +1,4 @@
 export const environment = {
-    production: true;
-    apiURL : "http://coding-factory-api.ddns.net"
+    production: true,
+    apiURL : "https://coding-factory-api.ddns.net"
 };
