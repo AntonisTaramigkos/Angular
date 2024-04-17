@@ -5,10 +5,14 @@ import { EpersonReactiveFormExampleComponent } from './components/eperson-reacti
 import { EventBindExampleComponent } from './components/event-bind-example/event-bind-example.component';
 import { ForDirectiveExampleComponent } from './components/for-directive-example/for-directive-example.component';
 import { HttpClientExampleComponent } from './components/http-client-example/http-client-example.component';
+import { RestrictedContentExampleComponent } from './components/restricted-content-example/restricted-content-example.component';
 import { SimpleDatatableExampleComponent } from './components/simple-datatable-example/simple-datatable-example.component';
 import { TemplateDrivenFormExampleComponent } from './components/template-driven-form-example/template-driven-form-example.component';
+import { UserLoginComponent } from './components/user-login/user-login.component';
 import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { authGuard } from './shared/guards/auth.guard';
+
 
 export const routes: Routes = [
     {path:"http-client-example",component:HttpClientExampleComponent},
@@ -22,6 +26,7 @@ export const routes: Routes = [
     {path:"event-bind-example", component : EventBindExampleComponent},
     {path:"simple-datatable-example",component: SimpleDatatableExampleComponent},
     {path:"user-registration-example",component: UserRegistrationComponent},
-    // {path:"welcome", component : WelcomeComponent},
+    {path:"restricted-content-example",component: RestrictedContentExampleComponent, canActivate:[authGuard]},
+    {path: "login",component:UserLoginComponent},
     {path:" ",component : WelcomeComponent }
 ];
