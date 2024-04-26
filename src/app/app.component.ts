@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { ListGroupMenuComponent } from "./components/list-group-menu/list-group-menu.component";
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { Person } from './shared/interfaces/person';
 
 @Component({
@@ -8,7 +9,7 @@ import { Person } from './shared/interfaces/person';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterLink, RouterOutlet, ListGroupMenuComponent]
+    imports: [RouterLink, RouterOutlet, ListGroupMenuComponent, NavbarComponent]
 })
 export class AppComponent {   
 
